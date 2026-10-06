@@ -1,0 +1,4 @@
+{
+  "name": "Billing country restriction",
+  "description": "Blocks checkout when the billing country is not the country this store operates in. Deactivate this checkout rule to allow any billing country."
+}

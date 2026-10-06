@@ -1,0 +1,32 @@
+{
+  "payload": {
+    "export": "cart-validations-generate-run",
+    "target": "cart.validations.generate.run",
+    "input": {
+      "cart": {
+        "billingAddress": {
+          "countryCode": "US"
+        }
+      },
+      "validation": {
+        "metafield": {
+          "jsonValue": {
+            "enabled": false,
+            "countryCode": "GB",
+            "countryName": "United Kingdom",
+            "errorMessage": "Billing country must be {country}."
+          }
+        }
+      }
+    },
+    "output": {
+      "operations": [
+        {
+          "validationAdd": {
+            "errors": []
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Billing country restriction",
+  "helpText": "Limit checkout billing country to this store's country. Turn the switch off to allow any billing country."
+}

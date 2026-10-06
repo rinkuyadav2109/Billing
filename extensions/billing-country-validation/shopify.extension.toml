@@ -1,0 +1,20 @@
+api_version = "2026-07"
+
+[[extensions]]
+name = "t:name"
+handle = "billing-country-validation"
+type = "function"
+uid = "b0754fae-03b3-b10a-7d7c-0038f0e463ebabc036d2"
+description = "t:description"
+
+  [extensions.ui]
+  handle = "billing-country-settings"
+
+  [[extensions.targeting]]
+  target = "cart.validations.generate.run"
+  input_query = "src/cart_validations_generate_run.graphql"
+  export = "cart-validations-generate-run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"

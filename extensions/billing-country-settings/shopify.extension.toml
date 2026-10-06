@@ -1,0 +1,18 @@
+api_version = "2025-10"
+[[extensions]]
+# change the merchant-facing name of the extension in locales/en.default.json
+name = "t:name"
+# your validation function's shopify.extension.toml will require a reference
+# within [extensions.ui] to this handle:
+#
+#   [extensions.ui]
+#   handle = "billing-country-settings"
+handle = "billing-country-settings"
+type = "ui_extension"
+uid = "d12f13e5-bf38-6a35-c872-4a78b69052bcfe37f1ba"
+
+[[extensions.targeting]]
+module = "./src/ValidationSettings.jsx"
+target = "admin.settings.validation.render"
+
+

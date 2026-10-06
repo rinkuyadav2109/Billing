@@ -1,0 +1,4 @@
+{
+  "name": "Restriction du pays de facturation",
+  "helpText": "Limiter le pays de facturation au pays de cette boutique. Désactivez l'interrupteur pour autoriser tous les pays."
+}

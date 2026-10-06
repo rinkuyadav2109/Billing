@@ -1,0 +1,12 @@
+query CartValidationsGenerateRunInput {
+  cart {
+    billingAddress {
+      countryCode
+    }
+  }
+  validation {
+    metafield(namespace: "$app:billing-country", key: "configuration") {
+      jsonValue
+    }
+  }
+}
